@@ -62,8 +62,8 @@ export default function App() {
       <nav className="fixed top-0 left-0 right-0 z-50 border-b border-[#1a1a1a] bg-[#0a0a0a]/90 backdrop-blur-sm">
         <div className="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
           <button onClick={() => nav("home")} className="font-display text-xl font-bold tracking-[0.3em] uppercase">
-            <span className="text-[#00FFE0]">КАТ</span>
-            <span className="text-white">АЛОГ</span>
+            <span className="text-[#00FFE0]">MIKA</span>
+            <span className="text-white">STORE</span>
           </button>
 
           <div className="hidden md:flex items-center gap-8">
@@ -126,9 +126,7 @@ export default function App() {
 /* ─────────────── HOME ─────────────── */
 function HomePage({ onNavigate }: { onNavigate: (p: Page) => void }) {
   const features = [
-    { icon: "Zap", label: "Быстрая доставка", desc: "От 1 дня по России" },
-    { icon: "Shield", label: "Гарантия качества", desc: "2 года на все товары" },
-    { icon: "RefreshCw", label: "Лёгкий возврат", desc: "30 дней без вопросов" },
+    { icon: "Zap", label: "Бесплатная доставка", desc: "В черте города" },
   ];
 
   return (
@@ -204,11 +202,11 @@ function HomePage({ onNavigate }: { onNavigate: (p: Page) => void }) {
 
       {/* FEATURES */}
       <section className="max-w-7xl mx-auto px-6 py-24">
-        <div className="grid md:grid-cols-3 gap-0 border border-[#1a1a1a]">
-          {features.map((f, i) => (
+        <div className="grid grid-cols-1 gap-0 border border-[#1a1a1a]">
+          {features.map((f) => (
             <div
               key={f.label}
-              className={`p-8 group hover:bg-[#00FFE0]/5 transition-colors duration-300 ${i < 2 ? "md:border-r border-[#1a1a1a]" : ""}`}
+              className="p-8 group hover:bg-[#00FFE0]/5 transition-colors duration-300"
             >
               <div className="w-10 h-10 border border-[#00FFE0]/30 flex items-center justify-center mb-4 group-hover:border-[#00FFE0] group-hover:bg-[#00FFE0]/10 transition-all duration-300">
                 <Icon name={f.icon} size={18} className="text-[#00FFE0]" />
