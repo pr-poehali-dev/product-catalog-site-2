@@ -153,11 +153,6 @@ function HomePage({ onNavigate }: { onNavigate: (p: Page) => void }) {
 
         <div className="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center w-full py-20">
           <div className="animate-fade-in opacity-0" style={{ animationDelay: "0ms" }}>
-            <div className="inline-flex items-center gap-2 border border-[#0ABFBC]/30 px-3 py-1 mb-6">
-              <span className="w-2 h-2 rounded-full bg-[#0ABFBC] animate-pulse" />
-              <span className="font-display text-xs tracking-[0.3em] text-[#0ABFBC] uppercase">Новая коллекция 2026</span>
-            </div>
-
             <h1 className="font-display text-6xl md:text-8xl font-bold leading-[0.9] uppercase mb-6">
               <span className="text-white">Интернет</span>
               <br />
