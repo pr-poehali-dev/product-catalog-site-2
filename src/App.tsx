@@ -159,11 +159,11 @@ function HomePage({ onNavigate }: { onNavigate: (p: Page) => void }) {
             </div>
 
             <h1 className="font-display text-6xl md:text-8xl font-bold leading-[0.9] uppercase mb-6">
-              <span className="text-white">ФОРМА</span>
+              <span className="text-white">Интернет</span>
               <br />
-              <span className="text-[#0ABFBC]">И</span>
+              <span className="text-[#0ABFBC]">каталог</span>
               <br />
-              <span className="text-white">СМЫСЛ</span>
+              <span className="text-white"></span>
             </h1>
 
             <p className="font-body text-white/50 text-lg mb-8 max-w-md leading-relaxed">
