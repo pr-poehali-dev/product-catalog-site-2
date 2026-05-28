@@ -477,33 +477,11 @@ function ContactsPage() {
             КОН<span className="text-[#0ABFBC]">ТАК</span>ТЫ
           </h1>
 
-          <div className="space-y-6">
-            {[
-              { icon: "Phone", label: "Телефон", value: "+7 (999) 000-00-00", href: "tel:+79990000000" },
-              { icon: "Mail", label: "Email", value: "info@katalog.ru", href: "mailto:info@katalog.ru" },
-            ].map((c) => (
-              <a key={c.label} href={c.href} className="flex items-start gap-4 group">
-                <div className="w-10 h-10 border border-[#1a1a1a] flex items-center justify-center flex-shrink-0 group-hover:border-[#0ABFBC]/30 transition-colors">
-                  <Icon name={c.icon} size={16} className="text-[#0ABFBC]" />
-                </div>
-                <div>
-                  <div className="font-display text-xs tracking-[0.2em] uppercase text-white/30 mb-0.5">{c.label}</div>
-                  <div className="text-white/80 text-sm group-hover:text-[#0ABFBC] transition-colors">{c.value}</div>
-                </div>
-              </a>
-            ))}
-          </div>
+          <p className="font-body text-white/50 text-sm leading-relaxed max-w-md">
+            Напишите нам в форме справа — мы ответим в течение рабочего дня и подберём решение под ваш запрос.
+          </p>
 
           <div className="flex gap-3 mt-10">
-            <a
-              href="https://t.me/+79081866405"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="flex items-center gap-2 border border-[#1a1a1a] px-4 py-2.5 text-white/40 hover:border-[#0ABFBC]/40 hover:text-[#0ABFBC] transition-all"
-            >
-              <Icon name="Send" size={15} />
-              <span className="font-display text-xs tracking-[0.2em] uppercase">Telegram</span>
-            </a>
             <a
               href="https://web.max.ru"
               target="_blank"
@@ -521,8 +499,6 @@ function ContactsPage() {
           <div className="space-y-4">
             {[
               { label: "Имя", type: "text", placeholder: "Ваше имя" },
-              { label: "Email", type: "email", placeholder: "mail@example.com" },
-              { label: "Телефон", type: "tel", placeholder: "+7 (___) ___-__-__" },
             ].map((f) => (
               <div key={f.label}>
                 <label className="font-display text-[10px] tracking-[0.3em] uppercase text-white/30 mb-1.5 block">{f.label}</label>
