@@ -470,7 +470,7 @@ function ContactsPage() {
               className="flex items-center gap-2 border border-[#1a1a1a] px-4 py-2.5 text-white/40 hover:border-[#FF2D78]/40 hover:text-[#FF2D78] transition-all"
             >
               <Icon name="Car" size={15} />
-              <span className="font-display text-xs tracking-[0.2em] uppercase">Maxim</span>
+              <span className="font-display text-xs tracking-[0.2em] uppercase">MAX</span>
             </a>
           </div>
         </div>
