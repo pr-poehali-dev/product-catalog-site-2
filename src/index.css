@@ -13,8 +13,8 @@
     --popover: 0 0% 7%;
     --popover-foreground: 0 0% 95%;
 
-    --primary: 170 100% 50%;
-    --primary-foreground: 0 0% 5%;
+    --primary: 178 87% 40%;
+    --primary-foreground: 0 0% 100%;
 
     --secondary: 0 0% 12%;
     --secondary-foreground: 0 0% 80%;
@@ -22,21 +22,20 @@
     --muted: 0 0% 12%;
     --muted-foreground: 0 0% 50%;
 
-    --accent: 340 100% 58%;
+    --accent: 349 85% 50%;
     --accent-foreground: 0 0% 100%;
 
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive: 349 85% 50%;
+    --destructive-foreground: 0 0% 100%;
 
     --border: 0 0% 15%;
     --input: 0 0% 15%;
-    --ring: 170 100% 50%;
+    --ring: 178 87% 40%;
 
     --radius: 0.25rem;
 
-    --neon-cyan: #00ffe0;
-    --neon-pink: #ff2d78;
-    --neon-yellow: #ffe100;
+    --tiffany: #0abfbc;
+    --red: #e8153a;
   }
 }
 
@@ -51,12 +50,12 @@
     background-image:
       radial-gradient(
         ellipse at 20% 50%,
-        rgba(0, 255, 224, 0.03) 0%,
+        rgba(10, 191, 188, 0.04) 0%,
         transparent 50%
       ),
       radial-gradient(
         ellipse at 80% 20%,
-        rgba(255, 45, 120, 0.03) 0%,
+        rgba(232, 21, 58, 0.04) 0%,
         transparent 50%
       );
   }
@@ -73,24 +72,24 @@
 
 @layer utilities {
   .neon-text {
-    color: var(--neon-cyan);
+    color: var(--tiffany);
     text-shadow:
-      0 0 10px rgba(0, 255, 224, 0.5),
-      0 0 30px rgba(0, 255, 224, 0.3);
+      0 0 10px rgba(10, 191, 188, 0.5),
+      0 0 30px rgba(10, 191, 188, 0.3);
   }
 
   .neon-border {
-    border-color: var(--neon-cyan);
+    border-color: var(--tiffany);
     box-shadow:
-      0 0 10px rgba(0, 255, 224, 0.2),
-      inset 0 0 10px rgba(0, 255, 224, 0.05);
+      0 0 10px rgba(10, 191, 188, 0.2),
+      inset 0 0 10px rgba(10, 191, 188, 0.05);
   }
 
-  .neon-border-pink {
-    border-color: var(--neon-pink);
+  .neon-border-red {
+    border-color: var(--red);
     box-shadow:
-      0 0 10px rgba(255, 45, 120, 0.2),
-      inset 0 0 10px rgba(255, 45, 120, 0.05);
+      0 0 10px rgba(232, 21, 58, 0.2),
+      inset 0 0 10px rgba(232, 21, 58, 0.05);
   }
 
   .card-hover {
@@ -99,13 +98,13 @@
 
   .card-hover:hover {
     transform: translateY(-4px);
-    box-shadow: 0 20px 60px rgba(0, 255, 224, 0.15);
+    box-shadow: 0 20px 60px rgba(10, 191, 188, 0.15);
   }
 
   .grid-bg {
     background-image:
-      linear-gradient(rgba(0, 255, 224, 0.05) 1px, transparent 1px),
-      linear-gradient(90deg, rgba(0, 255, 224, 0.05) 1px, transparent 1px);
+      linear-gradient(rgba(10, 191, 188, 0.05) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(10, 191, 188, 0.05) 1px, transparent 1px);
     background-size: 40px 40px;
   }
 
@@ -121,6 +120,6 @@
   background: #0a0a0a;
 }
 .scrollbar-thin::-webkit-scrollbar-thumb {
-  background: var(--neon-cyan);
+  background: var(--tiffany);
   border-radius: 2px;
 }
