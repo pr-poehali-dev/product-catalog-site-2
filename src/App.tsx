@@ -302,10 +302,41 @@ function CatalogPage({ products, category, setCategory, material, setMaterial, p
 
       <div>
         <div className="font-display text-xs tracking-[0.3em] uppercase text-[#0ABFBC] mb-3">Цена</div>
-        <Slider min={0} max={MAX_PRICE} step={500} value={priceRange} onValueChange={setPriceRange} className="mb-3" />
-        <div className="flex justify-between text-xs text-white/40">
-          <span>{formatPrice(priceRange[0])}</span>
-          <span>{formatPrice(priceRange[1])}</span>
+        <Slider min={0} max={MAX_PRICE} step={100} value={priceRange} onValueChange={setPriceRange} className="mb-3" />
+        <div className="flex items-center gap-2 mb-3">
+          <div className="flex-1">
+            <label className="block text-[10px] tracking-[0.2em] uppercase text-white/30 mb-1">От</label>
+            <input
+              type="number"
+              min={0}
+              max={priceRange[1]}
+              value={priceRange[0]}
+              onChange={(e) => setPriceRange([Math.min(Number(e.target.value) || 0, priceRange[1]), priceRange[1]])}
+              className="w-full bg-transparent border border-[#2a2a2a] focus:border-[#0ABFBC] outline-none px-2 py-1.5 text-sm text-white transition-colors"
+            />
+          </div>
+          <div className="flex-1">
+            <label className="block text-[10px] tracking-[0.2em] uppercase text-white/30 mb-1">До</label>
+            <input
+              type="number"
+              min={priceRange[0]}
+              max={MAX_PRICE}
+              value={priceRange[1]}
+              onChange={(e) => setPriceRange([priceRange[0], Math.max(Number(e.target.value) || 0, priceRange[0])])}
+              className="w-full bg-transparent border border-[#2a2a2a] focus:border-[#0ABFBC] outline-none px-2 py-1.5 text-sm text-white transition-colors"
+            />
+          </div>
+        </div>
+        <div className="flex gap-2 flex-wrap">
+          {[[0, 1000], [1000, 3000], [3000, 5000], [5000, MAX_PRICE]].map(([from, to]) => (
+            <button
+              key={`${from}-${to}`}
+              onClick={() => setPriceRange([from, to])}
+              className={`px-2 py-1 text-[10px] font-display tracking-wider uppercase transition-all border ${priceRange[0] === from && priceRange[1] === to ? "border-[#0ABFBC] text-[#0ABFBC] bg-[#0ABFBC]/10" : "border-[#2a2a2a] text-white/40 hover:border-white/30 hover:text-white"}`}
+            >
+              {from === 0 ? "до " + to : to === MAX_PRICE ? from + "+" : from + "–" + to}
+            </button>
+          ))}
         </div>
       </div>
 
