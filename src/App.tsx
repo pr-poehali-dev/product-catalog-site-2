@@ -413,20 +413,13 @@ function ProductCard({ product, index }: { product: Product; index: number }) {
       </div>
 
       <div className="p-4">
-        <div className="flex items-start justify-between mb-2">
+        <div className="flex items-start justify-between">
           <div>
             <div className="font-display font-semibold uppercase tracking-wider text-sm">{product.name}</div>
             <div className="text-white/30 text-xs mt-0.5">{product.category} · {product.material}</div>
           </div>
           <div className="font-display font-bold text-[#00FFE0] text-sm flex-shrink-0 ml-2">{formatPrice(product.price)}</div>
         </div>
-
-        <button
-          className={`mt-3 w-full font-display text-xs tracking-[0.2em] uppercase py-2.5 transition-all duration-200 ${product.inStock ? "bg-[#00FFE0] text-[#0a0a0a] hover:bg-white" : "bg-[#1a1a1a] text-white/20 cursor-not-allowed"}`}
-          disabled={!product.inStock}
-        >
-          {product.inStock ? "В корзину" : "Нет в наличии"}
-        </button>
       </div>
     </div>
   );
@@ -445,29 +438,40 @@ function ContactsPage() {
 
           <div className="space-y-6">
             {[
-              { icon: "MapPin", label: "Адрес", value: "Москва, ул. Примерная, 1" },
-              { icon: "Phone", label: "Телефон", value: "+7 (999) 000-00-00" },
-              { icon: "Mail", label: "Email", value: "info@katalog.ru" },
-              { icon: "Clock", label: "Режим работы", value: "Пн–Пт, 9:00–18:00" },
+              { icon: "Phone", label: "Телефон", value: "+7 (999) 000-00-00", href: "tel:+79990000000" },
+              { icon: "Mail", label: "Email", value: "info@katalog.ru", href: "mailto:info@katalog.ru" },
             ].map((c) => (
-              <div key={c.label} className="flex items-start gap-4 group">
+              <a key={c.label} href={c.href} className="flex items-start gap-4 group">
                 <div className="w-10 h-10 border border-[#1a1a1a] flex items-center justify-center flex-shrink-0 group-hover:border-[#00FFE0]/30 transition-colors">
                   <Icon name={c.icon} size={16} className="text-[#00FFE0]" />
                 </div>
                 <div>
                   <div className="font-display text-xs tracking-[0.2em] uppercase text-white/30 mb-0.5">{c.label}</div>
-                  <div className="text-white/80 text-sm">{c.value}</div>
+                  <div className="text-white/80 text-sm group-hover:text-[#00FFE0] transition-colors">{c.value}</div>
                 </div>
-              </div>
+              </a>
             ))}
           </div>
 
           <div className="flex gap-3 mt-10">
-            {[{ icon: "Send", label: "Telegram" }, { icon: "Instagram", label: "Instagram" }, { icon: "Youtube", label: "YouTube" }].map((s) => (
-              <button key={s.label} className="w-10 h-10 border border-[#1a1a1a] flex items-center justify-center text-white/30 hover:border-[#00FFE0]/40 hover:text-[#00FFE0] transition-all">
-                <Icon name={s.icon} size={16} />
-              </button>
-            ))}
+            <a
+              href="https://t.me/username"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-2 border border-[#1a1a1a] px-4 py-2.5 text-white/40 hover:border-[#00FFE0]/40 hover:text-[#00FFE0] transition-all"
+            >
+              <Icon name="Send" size={15} />
+              <span className="font-display text-xs tracking-[0.2em] uppercase">Telegram</span>
+            </a>
+            <a
+              href="https://wa.me/79990000000"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-2 border border-[#1a1a1a] px-4 py-2.5 text-white/40 hover:border-[#25D366]/40 hover:text-[#25D366] transition-all"
+            >
+              <Icon name="MessageCircle" size={15} />
+              <span className="font-display text-xs tracking-[0.2em] uppercase">WhatsApp</span>
+            </a>
           </div>
         </div>
 
