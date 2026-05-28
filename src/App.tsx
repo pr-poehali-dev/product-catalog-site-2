@@ -17,32 +17,32 @@ interface Product {
 }
 
 const PRODUCTS: Product[] = [
-  { id: 1, name: "Объект А-17", category: "Электроника", price: 12900, material: "Металл", inStock: true, tag: "НОВ" },
-  { id: 2, name: "Форма Б-3", category: "Аксессуары", price: 4500, material: "Пластик", inStock: true },
-  { id: 3, name: "Структура В-9", category: "Мебель", price: 34000, material: "Дерево", inStock: false, tag: "ХИТ" },
-  { id: 4, name: "Элемент Г-22", category: "Электроника", price: 8700, material: "Металл", inStock: true },
-  { id: 5, name: "Деталь Д-5", category: "Аксессуары", price: 2100, material: "Ткань", inStock: true, tag: "−20%" },
-  { id: 6, name: "Блок Е-11", category: "Мебель", price: 55000, material: "Металл", inStock: true },
-  { id: 7, name: "Узел Ж-7", category: "Электроника", price: 19500, material: "Пластик", inStock: false },
-  { id: 8, name: "Модуль З-1", category: "Аксессуары", price: 6800, material: "Кожа", inStock: true, tag: "НОВ" },
-  { id: 9, name: "Система И-4", category: "Мебель", price: 27300, material: "Дерево", inStock: true },
-  { id: 10, name: "Контур К-8", category: "Электроника", price: 15600, material: "Металл", inStock: true, tag: "НОВ" },
-  { id: 11, name: "Артефакт Л-2", category: "Аксессуары", price: 3400, material: "Кожа", inStock: true },
-  { id: 12, name: "Призма М-14", category: "Мебель", price: 42800, material: "Дерево", inStock: true, tag: "ХИТ" },
-  { id: 13, name: "Шифр Н-6", category: "Электроника", price: 22400, material: "Пластик", inStock: false },
-  { id: 14, name: "Сегмент О-19", category: "Аксессуары", price: 5700, material: "Ткань", inStock: true, tag: "−15%" },
-  { id: 15, name: "Каркас П-3", category: "Мебель", price: 38900, material: "Металл", inStock: true },
-  { id: 16, name: "Импульс Р-12", category: "Электроника", price: 9800, material: "Металл", inStock: true, tag: "НОВ" },
-  { id: 17, name: "Вектор С-7", category: "Аксессуары", price: 7200, material: "Кожа", inStock: true },
-  { id: 18, name: "Платформа Т-21", category: "Мебель", price: 51200, material: "Дерево", inStock: false, tag: "ХИТ" },
-  { id: 19, name: "Грань У-5", category: "Электроника", price: 13400, material: "Пластик", inStock: true },
-  { id: 20, name: "Силуэт Ф-9", category: "Аксессуары", price: 2900, material: "Ткань", inStock: true, tag: "−30%" },
-  { id: 21, name: "Опора Х-16", category: "Мебель", price: 29700, material: "Металл", inStock: true },
+  { id: 1, name: "Органайзер А-17", category: "Товары для дома", price: 2900, material: "Дерево", inStock: true, tag: "НОВ" },
+  { id: 2, name: "Доска разделочная Б-3", category: "Товары для кухни", price: 1800, material: "Дерево", inStock: true },
+  { id: 3, name: "Брелок Орбита В-9", category: "Брелки", price: 690, material: "Металл", inStock: false, tag: "ХИТ" },
+  { id: 4, name: "Статуэтка Геометр Г-22", category: "Статуэтки", price: 4500, material: "Металл", inStock: true },
+  { id: 5, name: "Держатель Грань Д-5", category: "Держатели бутылок", price: 2100, material: "Металл", inStock: true, tag: "−20%" },
+  { id: 6, name: "Модель Робот Е-11", category: "Модели собери сам", price: 3400, material: "Дерево", inStock: true },
+  { id: 7, name: "Венчик Ж-7", category: "Товары для кухни", price: 950, material: "Металл", inStock: false },
+  { id: 8, name: "Брелок Куб З-1", category: "Брелки", price: 590, material: "Кожа", inStock: true, tag: "НОВ" },
+  { id: 9, name: "Статуэтка Минотавр И-4", category: "Статуэтки", price: 6800, material: "Дерево", inStock: true },
+  { id: 10, name: "Свеча К-8", category: "Товары для дома", price: 1200, material: "Воск", inStock: true, tag: "НОВ" },
+  { id: 11, name: "Брелок Атом Л-2", category: "Брелки", price: 790, material: "Металл", inStock: true },
+  { id: 12, name: "Модель Спутник М-14", category: "Модели собери сам", price: 5200, material: "Дерево", inStock: true, tag: "ХИТ" },
+  { id: 13, name: "Подставка под нож Н-6", category: "Товары для кухни", price: 2400, material: "Дерево", inStock: false },
+  { id: 14, name: "Держатель Двойник О-19", category: "Держатели бутылок", price: 1700, material: "Металл", inStock: true, tag: "−15%" },
+  { id: 15, name: "Статуэтка Сова П-3", category: "Статуэтки", price: 3900, material: "Керамика", inStock: true },
+  { id: 16, name: "Ваза Р-12", category: "Товары для дома", price: 2800, material: "Керамика", inStock: true, tag: "НОВ" },
+  { id: 17, name: "Брелок Звезда С-7", category: "Брелки", price: 720, material: "Кожа", inStock: true },
+  { id: 18, name: "Модель Маяк Т-21", category: "Модели собери сам", price: 5100, material: "Дерево", inStock: false, tag: "ХИТ" },
+  { id: 19, name: "Подставка для ложек У-5", category: "Товары для кухни", price: 1340, material: "Керамика", inStock: true },
+  { id: 20, name: "Держатель Тройник Ф-9", category: "Держатели бутылок", price: 2900, material: "Металл", inStock: true, tag: "−30%" },
+  { id: 21, name: "Статуэтка Кит Х-16", category: "Статуэтки", price: 2970, material: "Дерево", inStock: true },
 ];
 
-const CATEGORIES = ["Все", "Электроника", "Аксессуары", "Мебель"];
-const MATERIALS = ["Все", "Металл", "Пластик", "Дерево", "Ткань", "Кожа"];
-const MAX_PRICE = 60000;
+const CATEGORIES = ["Все", "Товары для дома", "Товары для кухни", "Брелки", "Статуэтки", "Держатели бутылок", "Модели собери сам"];
+const MATERIALS = ["Все", "Металл", "Дерево", "Кожа", "Керамика", "Воск"];
+const MAX_PRICE = 10000;
 
 function formatPrice(p: number) {
   return p.toLocaleString("ru-RU") + " ₽";
