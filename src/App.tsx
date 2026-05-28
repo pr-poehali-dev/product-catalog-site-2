@@ -194,8 +194,8 @@ function HomePage({ onNavigate }: { onNavigate: (p: Page) => void }) {
         <div className="flex gap-0 animate-marquee whitespace-nowrap">
           {Array(4).fill(null).map((_, i) => (
             <span key={i} className="inline-flex items-center gap-8 pr-8">
-              {["ЭЛЕКТРОНИКА", "АКСЕССУАРЫ", "МЕБЕЛЬ", "НОВИНКИ", "ХИТЫ", "СКИДКИ"].map((t) => (
-                <span key={t + i} className="font-display text-xs tracking-[0.4em] text-[#00FFE0]/50 uppercase">{t}</span>
+              {Array(6).fill("MIKASTORE").map((t, j) => (
+                <span key={j + i} className="font-display text-xs tracking-[0.4em] text-[#00FFE0]/50 uppercase">{t}</span>
               ))}
             </span>
           ))}
@@ -469,7 +469,7 @@ function ContactsPage() {
               rel="noopener noreferrer"
               className="flex items-center gap-2 border border-[#1a1a1a] px-4 py-2.5 text-white/40 hover:border-[#FF2D78]/40 hover:text-[#FF2D78] transition-all"
             >
-              <Icon name="Car" size={15} />
+              <Icon name="MessageSquare" size={15} />
               <span className="font-display text-xs tracking-[0.2em] uppercase">MAX</span>
             </a>
           </div>
