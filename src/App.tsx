@@ -455,7 +455,7 @@ function ContactsPage() {
 
           <div className="flex gap-3 mt-10">
             <a
-              href="https://t.me/username"
+              href="https://t.me/+79081866405"
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center gap-2 border border-[#1a1a1a] px-4 py-2.5 text-white/40 hover:border-[#00FFE0]/40 hover:text-[#00FFE0] transition-all"
@@ -464,13 +464,13 @@ function ContactsPage() {
               <span className="font-display text-xs tracking-[0.2em] uppercase">Telegram</span>
             </a>
             <a
-              href="https://wa.me/79990000000"
+              href="https://maxim.ru"
               target="_blank"
               rel="noopener noreferrer"
-              className="flex items-center gap-2 border border-[#1a1a1a] px-4 py-2.5 text-white/40 hover:border-[#25D366]/40 hover:text-[#25D366] transition-all"
+              className="flex items-center gap-2 border border-[#1a1a1a] px-4 py-2.5 text-white/40 hover:border-[#FF2D78]/40 hover:text-[#FF2D78] transition-all"
             >
-              <Icon name="MessageCircle" size={15} />
-              <span className="font-display text-xs tracking-[0.2em] uppercase">WhatsApp</span>
+              <Icon name="Car" size={15} />
+              <span className="font-display text-xs tracking-[0.2em] uppercase">Maxim</span>
             </a>
           </div>
         </div>
