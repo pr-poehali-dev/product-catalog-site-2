@@ -26,6 +26,18 @@ const PRODUCTS: Product[] = [
   { id: 7, name: "Узел Ж-7", category: "Электроника", price: 19500, material: "Пластик", inStock: false },
   { id: 8, name: "Модуль З-1", category: "Аксессуары", price: 6800, material: "Кожа", inStock: true, tag: "НОВ" },
   { id: 9, name: "Система И-4", category: "Мебель", price: 27300, material: "Дерево", inStock: true },
+  { id: 10, name: "Контур К-8", category: "Электроника", price: 15600, material: "Металл", inStock: true, tag: "НОВ" },
+  { id: 11, name: "Артефакт Л-2", category: "Аксессуары", price: 3400, material: "Кожа", inStock: true },
+  { id: 12, name: "Призма М-14", category: "Мебель", price: 42800, material: "Дерево", inStock: true, tag: "ХИТ" },
+  { id: 13, name: "Шифр Н-6", category: "Электроника", price: 22400, material: "Пластик", inStock: false },
+  { id: 14, name: "Сегмент О-19", category: "Аксессуары", price: 5700, material: "Ткань", inStock: true, tag: "−15%" },
+  { id: 15, name: "Каркас П-3", category: "Мебель", price: 38900, material: "Металл", inStock: true },
+  { id: 16, name: "Импульс Р-12", category: "Электроника", price: 9800, material: "Металл", inStock: true, tag: "НОВ" },
+  { id: 17, name: "Вектор С-7", category: "Аксессуары", price: 7200, material: "Кожа", inStock: true },
+  { id: 18, name: "Платформа Т-21", category: "Мебель", price: 51200, material: "Дерево", inStock: false, tag: "ХИТ" },
+  { id: 19, name: "Грань У-5", category: "Электроника", price: 13400, material: "Пластик", inStock: true },
+  { id: 20, name: "Силуэт Ф-9", category: "Аксессуары", price: 2900, material: "Ткань", inStock: true, tag: "−30%" },
+  { id: 21, name: "Опора Х-16", category: "Мебель", price: 29700, material: "Металл", inStock: true },
 ];
 
 const CATEGORIES = ["Все", "Электроника", "Аксессуары", "Мебель"];
